@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- importing scripts into html -->
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jsscript.js"></script> 
+
+
+
+
+
+  </head>
+
+  <body>
+    <!-- creating form and giving each option a specific value that it will be referred to in the JS file-->
+    <form>
+      <label for="genderSelector">Gender:</label>
+      <select id="genderSelector">
+        <option value='na'>Please select a gender</option>
+        <option value='fe'>Female</option>
+        <option value='ma'>Male</option>
+      </select>
+
+      <label for="nameSelector">Enter player name:</label>
+      <input type="text" id="nameSelector" />
+
+      <label for="conditionSelector">None/Equals/Contains:</label>
+      <select id="conditionSelector">
+        <option value='no'>None</option>
+        <option value='eq'>Equals</option>
+        <option value='co'>Contains</option>
+      </select>
+
+      <label for="resultSelector">Winner/Runner Up/Either:</label>
+      <select id="resultSelector">
+        <option value='ei'>Either</option>
+        <option value='wi'>Winner</option>
+        <option value='ru'>Runner Up</option>
+      </select>
+
+      <label for="yearSelector">Enter year:</label>
+      <input type="text" id="yearSelector" />
+
+      <label for="yearSpecificSelector">Equals/Greater Than/Less Than:</label>
+      <select id="yearSpecificSelector">
+        <option value='equ'>Equals</option>
+        <option value='gt'>Greater Than</option>
+        <option value='lt'>Less Than</option>
+      </select>
+
+      <label for="tournamentSelector">Select Tournament:</label>
+      <select id="tournamentSelector">
+        <option value='Any'>Any</option>
+        <option value='Australian Open'>Australian Open</option>
+        <option value='French Open'>French Open</option>
+        <option value='Wimbledon'>Wimbledon</option>
+        <option value='U.S. Open'>U.S. Open</option>
+
+      </select>
+
+
+
+
+
+      
+      
+      
+    
+
+
+    </form>
+    <button id="select-button">Select</button>
+
+    <!-- Results will be shown below-->
+
+    <h1>Results: </h1>
+    
+
+
+    <div id="resultArea">
+
+
+    </div>
+
+  </body>
+
+
+
+</html>
